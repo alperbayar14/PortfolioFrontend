@@ -64,3 +64,89 @@ body {
 .signup-button:hover {
     background-color: #5E3C9E;
 }
+/* Add these to your existing Home.css */
+
+.search-container {
+  position: relative;
+  margin: 15px 0; /* Margin küçültüldü */
+  width: 90%; /* Genişliği yüzde olarak ayarlandı */
+  max-width: 400px;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 10px 15px; /* Padding küçültüldü */
+  border: none;
+  border-radius: 20px; /* Border-radius azaltıldı */
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 14px; /* Yazı boyutu küçültüldü */
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.search-container input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9em; /* Placeholder yazı boyutu ayarı */
+}
+  
+  .results-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .result-item {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .result-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(5px);
+  }
+  
+  .username {
+    font-weight: 500;
+  }
+  
+  .view-profile {
+    font-size: 0.9em;
+    opacity: 0.7;
+  }
+  
+  .no-results {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+  }
+  
+  .results-list::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .results-list::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  
+  .results-list::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+  }
+  
+  .results-list::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
